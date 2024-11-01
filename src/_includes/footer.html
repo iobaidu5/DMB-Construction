@@ -1,0 +1,88 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 col-sm-6 my-4">
+        <div class="footer_logo">
+          <img src="../assets/img/white-logo.png" alt="" class="footer_logo-img">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 my-4">
+        <div class="footer_content">
+          <ul class="footer_content-ul">
+            Sitemap
+            <li class="footer_content-li">
+              <a href="{% link accueil.html %}"
+                class="footer_content-li--link {% if page.url == '/' %} active-clr {% endif %}">Accueil</a>
+            </li>
+            <li class="footer_content-li">
+              <a href="{% link notre-entreprise.html %}"
+                class="footer_content-li--link {% if page.url == '/notre-entreprise' %} active-clr {% endif %}">Notre
+                entreprise</a>
+            </li>
+            <li class="footer_content-li">
+              <a href="{% link nos-prestations.html %}" class="footer_content-li--link {% if page.url == '/nos-prestations' %} active-clr {% endif %}">Nos
+                prestations</a>
+            </li>
+            <li class="footer_content-li">
+              <a href="{% link contact.html %}"
+                class="footer_content-li--link {% if page.url == '/contact' %} active-clr {% endif %}">Nous
+                contacter</a>
+            </li>
+            <li class="footer_content-li">
+              <a href="{% link devis.html %}"
+                class="footer_content-li--link {% if page.url == '/devis' %} active-clr {% endif %}">Devis en ligne</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-6 my-4">
+        <div class="footer_content">
+          <ul class="footer_content-ul">
+            Contact
+            <li class="footer_content-li">
+              <a href="tel:{{site.data.company.phone}}" class="footer_content-li--link">Téléphone : +230 XXXX XXXX </a>
+            </li>
+            <li class="footer_content-li">
+              <a href="mailto:{{site.data.company.email}}" class="footer_content-li--link"> Email :
+                {{site.data.company.email}}</a>
+            </li>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p"> Adresse : {{site.data.company.address}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center">
+        <ul class="social">
+          <li class="text-white">
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in text-white f-18"></i></a>
+          </li>
+          <li>
+            <a href="#" class="text-white">
+              <i class="fab fa-google-plus text-white f-18"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr class="menu_bg-col--hr">
+      <div class="footer_bottom d-flex justify-content-between py-5">
+        <div>
+          <p class="footer_content-li--link2 text-center">© 2024 Insight Consulting. All rights reserved. </p>
+        </div>
+        <div>
+          <p class="footer_content-li--link2 text-center">Copyright ©
+            2024 <a href="https://www.bhinternet.fr/" target="_blank" class="footer_content-li--link text-center">BHinternet</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
