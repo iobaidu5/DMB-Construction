@@ -1,86 +1,96 @@
 <footer class="footer">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4 col-sm-6 my-4">
-        <div class="footer_logo">
-          <img src="../assets/img/white-logo.png" alt="" class="footer_logo-img">
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 my-4">
-        <div class="footer_content">
-          <ul class="footer_content-ul">
-            Sitemap
-            <li class="footer_content-li">
-              <a href="{% link accueil.html %}"
-                class="footer_content-li--link {% if page.url == '/' %} active-clr {% endif %}">Accueil</a>
-            </li>
-            <li class="footer_content-li">
-              <a href="{% link notre-entreprise.html %}"
-                class="footer_content-li--link {% if page.url == '/notre-entreprise' %} active-clr {% endif %}">Notre
-                entreprise</a>
-            </li>
-            <li class="footer_content-li">
-              <a href="{% link nos-prestations.html %}" class="footer_content-li--link {% if page.url == '/nos-prestations' %} active-clr {% endif %}">Nos
-                prestations</a>
-            </li>
-            <li class="footer_content-li">
-              <a href="{% link contact.html %}"
-                class="footer_content-li--link {% if page.url == '/contact' %} active-clr {% endif %}">Nous
-                contacter</a>
-            </li>
-            <li class="footer_content-li">
-              <a href="{% link devis.html %}"
-                class="footer_content-li--link {% if page.url == '/devis' %} active-clr {% endif %}">Devis en ligne</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-
-      <div class="col-md-4 col-sm-6 my-4">
-        <div class="footer_content">
-          <ul class="footer_content-ul">
-            Contact
-            <li class="footer_content-li">
-              <a href="tel:{{site.data.company.phone}}" class="footer_content-li--link">Téléphone : +230 XXXX XXXX </a>
-            </li>
-            <li class="footer_content-li">
-              <a href="mailto:{{site.data.company.email}}" class="footer_content-li--link"> Email :
-                {{site.data.company.email}}</a>
-            </li>
-            <li class="footer_content-li">
-              <p class="footer_content-li--p"> Adresse : {{site.data.company.address}}</p>
-            </li>
-          </ul>
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=BHinternet&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online.stopwatch-timer.net/">timer
+            stopwatch</a><br><a href="https://textcaseconvert.com/"></a><br>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 400px;
+              width: 100%;
+            }
+          </style><a href="https://www.embedmaps.co">create map in google</a>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 400px;
+              width: 100%;
+            }
+          </style>
         </div>
       </div>
     </div>
-    <div class="container mt-5">
-      <div class="d-flex justify-content-center">
-        <ul class="social">
-          <li class="text-white">
-            <a href="#" class="text-white"><i class="fab fa-linkedin-in text-white f-18"></i></a>
-          </li>
-          <li>
-            <a href="#" class="text-white">
-              <i class="fab fa-google-plus text-white f-18"></i>
-            </a>
-          </li>
-        </ul>
+    <div class="col-md-5">
+      <div class="footer_content">
+        <h2 class="footer_content-title">Trouvez votre agence</h2>
+        <a href="tel:{{site.data.company.phone}}" class="footer_content-phone">{{site.data.company.phone}}</a>
       </div>
-      <hr class="menu_bg-col--hr">
-      <div class="footer_bottom d-flex justify-content-between py-5">
-        <div>
-          <p class="footer_content-li--link2 text-center">© 2024 Insight Consulting. All rights reserved. </p>
+      <div class="mt-5">
+        <h3 class="footer_content-header">Agence </h3>
+        <p class="footer_content-p">{{site.data.company.address1}}</p>
+        <p class="footer_content-p">{{site.data.company.address2}}</p>
+      </div>
+      <div class="mt-5">
+        <h3 class="footer_content-header">Espace de vente</h3>
+        <p class="footer_content-p">4, grande rue<br>
+          91360 Épinay-sur-Orge</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="footer_image">
+          <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
+              class="Navbar_image-img" alt="Logo" /></a>
         </div>
-        <div>
-          <p class="footer_content-li--link2 text-center">Copyright ©
-            2024 <a href="https://www.bhinternet.fr/" target="_blank" class="footer_content-li--link text-center">BHinternet</a></p>
+      </div>
+      <div class="col-md-6">
+        <div class="footer_content">
+          <h3 class="footer_content-title2">COMPAGNIES</h3>
+          <ul class="footer_content-ul">
+            <li class="footer_content-ul--li">
+              <a href="" class="footer_content-ul--link">Accueil</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="" class="footer_content-ul--link">Nos Prestations</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="" class="footer_content-ul--link">Nos Réalisations</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="" class="footer_content-ul--link">Blog</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="" class="footer_content-ul--link">Nous Contacter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="footer_content">
+          <h3 class="footer_content-title2">Nous contacter</h3>
+          <a href="tel:{{site.data.company.phone}}" class="footer_content-link">{{site.data.company.phone}}</a>
+          <p class="footer_content-p">Retrouvez-nous sur</p>
+          <ul class="footer_social">
+            <li class="footer_social-icon"><i class="fab fa-facebook-f"></i></li>
+            <li class="footer_social-icon"><i class="fab fa-instagram"></i></li>
+            <li class="footer_social-icon"><i class="fab fa-linkedin-in"></i></li>
+            <li class="footer_social-icon"><i class="fab fa-twitter"></i></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </footer>
+<div class="footer_bottom text-center">
+  <a href="" class="footer_bottom-p">BHInternet - Création site internet | 2024</a>
+</div>
 
 
 <script src="./assets/js/index.js"></script>

@@ -29,7 +29,7 @@ function fixNav() {
   $(document).ready(function () {
   var owl = $(".owl");
   owl.owlCarousel({
-    items: 6,
+    items: 3,
     nav: false,
     loop: true,
     autoplay: true,
@@ -39,10 +39,10 @@ function fixNav() {
     dots: true,
     animateIn: "fadeIn",
     animateOut: "fadeOut",
-    // navText: [
-    //   "<i class='fas fa-circle owlNav-left'></i>",
-    //   "<i class='fas fa-circle owlNav-right'></i>",
-    // ],
+    navText: [
+      "<i class='fas fa-arrow-left owlNav-left'></i>",
+      "<i class='fas fa-arrow-right owlNav-right'></i>",
+    ],
     responsiveClass: true,
     responsive: {
       100: {
@@ -62,7 +62,7 @@ function fixNav() {
         nav: false,
       },
       1600: {
-        items: 6,
+        items: 4,
         nav: true,
         loop: false,
       },
