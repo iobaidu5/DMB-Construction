@@ -1,8 +1,8 @@
 <section class="Navbar navbar-main fixedNav">
   <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
     <div class="container to-col">
-      <div class="Navbar_image to-show-990">
-        <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
+      <div class="Navbar_image">
+        <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/white-logo.png"
           class="Navbar_image-img" alt="Logo" /></a>
       </div>
       <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -16,28 +16,6 @@
           </li>
           <li class="nav-item Navbar_nav-item">
             <a class="nav-link Navbar_nav-link" title="Nos Prestations" href="{% link nos-prestations.html %}"> Nos prestations </a>
-          </li>
-          <!-- <li class="nav-item dropdown Navbar_nav-item">
-            <a class="nav-link {% if page.url == '/' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %} dropdown-toggle d-flex align-items-center"
-                href="{% link nos-prestations.html %}" id="navbarDropdown" role="button"
-                aria-haspopup="true" aria-expanded="false">Nos prestations
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="py-3 dropdown-item {% if page.url == '/je-suis-un-cabinet-comptable' %} Navbar_nav-link inner-active {% else %} Navbar_nav-link2 {% endif %}"
-                    href="{% link je-suis-un-cabinet-comptable.html %}">Je suis un Cabinet comptable</a>
-                <hr class="Navbar_nav-hr">
-                <a class="py-3 dropdown-item {% if page.url == '/je-suis-une-entreprise' %} Navbar_nav-link inner-active {% else %} Navbar_nav-link2 {% endif %}"
-                    href="{% link je-suis-une-entreprise.html %}">Je suis une entreprise</a>
-                <hr class="Navbar_nav-hr">
-            </div>
-        </li> -->
-        
-          <li class="nav-item Navbar_nav-item to-hide-990">
-            <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
-                class="Navbar_image-img" alt="Logo" /></a>
-          </li>
-          <li class="nav-item Navbar_nav-item">
-            <a class="nav-link Navbar_nav-link" title="Notre entreprise" href="{% link notre-entreprise.html %}">BLOG</a>
           </li>
           <li class="nav-item Navbar_nav-item">
             <a class="nav-link Navbar_nav-link" title="Nous contacter" href="{% link contact.html %}"> Nous contacter </a>

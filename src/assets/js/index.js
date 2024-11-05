@@ -91,11 +91,12 @@ function fixNav() {
   });
 });
 
+
 $(document).ready(function () {
   var owl = $(".owl2");
   owl.owlCarousel({
-    items: 1,
-    nav: false,
+    items: 3,
+    nav: true,
     loop: true,
     autoplay: true,
     margin: 20,
@@ -104,32 +105,35 @@ $(document).ready(function () {
     dots: true,
     animateIn: "fadeIn",
     animateOut: "fadeOut",
-    navText: [
-      "<i class='fas fa-circle owlNav-left mx-2'></i>",
-      "<i class='fas fa-circle owlNav-right mx-2'></i>",
-    ],
+    stagePadding: 50,
+    center: true,
     responsiveClass: true,
     responsive: {
       100: {
         items: 1,
         nav: true,
+        stagePadding: 0,
       },
       400: {
         items: 2,
         nav: true,
+        stagePadding: 0,
       },
       768: {
         items: 2,
         nav: true,
+        stagePadding: 0,
       },
       1200: {
         items: 3,
         nav: false,
+        stagePadding: 40,
       },
       1600: {
         items: 3,
         nav: true,
         loop: false,
+        stagePadding: 50,
       },
     },
   });
@@ -148,6 +152,7 @@ $(document).ready(function () {
   owl.on('changed.owl.carousel', function (event) {
     limitDots();
   });
+  
   $(".play").on("click", function () {
     owl.trigger("play.owl.autoplay", [5000]);
   });
@@ -155,6 +160,7 @@ $(document).ready(function () {
     owl.trigger("stop.owl.autoplay");
   });
 });
+
 
 
 
