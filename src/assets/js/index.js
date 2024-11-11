@@ -29,11 +29,11 @@ function fixNav() {
   $(document).ready(function () {
   var owl = $(".owl");
   owl.owlCarousel({
-    items: 3,
+    items: 4,
     nav: false,
     loop: true,
     autoplay: true,
-    margin: 20,
+    margin: 10,
     autoplayTimeout: 5000,
     autoplayHoverPause: false,
     dots: true,
