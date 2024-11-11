@@ -1,72 +1,40 @@
 ---
 layout: default
 permalink: /contact
-title: 
-description: 
+title:
+description:
 keywords:
 ---
 
-<section class="banner">
+<section class="banner-contact">
   <div class="container">
-    <div class="slider_content">
-      <h1 class="slider_content-title">NOUS CONTACTER</h1>
-      <!-- <div class="slider_content-button">
-        <a href="#" class="slider_content-button--a">
-          DEMANDE DE DEVIS
-          <img src="../assets/img/btn-arrow.png" alt="Arrow Icon" class="slider_content-button--img">
+    <div class="banner_content">
+      <h1 class="slider_content-title">
+        NOUS CONTACTER
+      </h1>
+      <p class="slider_content-p">DMB CONSTRUCTION</p>
+      <div class="slider_content-button2 pb-0 mb-0 mt-4 pt-4">
+        <p class="slider_content-button--p">
+          {{site.data.company.address1}}
+          {{site.data.company.address2}}
+        </p>
+      </div>
+      <div class="slider_content-button2 d-flex justify-content-center pt-0 mt-0">
+        <a href="mailto:{{site.data.company.email}}" class="slider_content-button--a1 text-center">
+          {{site.data.company.email}}
         </a>
-      </div> -->
-    </div>
-  </div>
-</section>
-
-
-<section class="menu section pb-0">
-  <div class="container-fluid">
-    <div class="row align-items-end">
-      <div class="col-md-12">
-        <div class="menu_content container">
-          <p class="menu_content-p text-center">
-            Etes-vous prêt à simplifier la gestion de votre comptabilité et à dégager du temps pour vous focaliser sur le développement de votre entreprise ? Prenez contact avec nous aujourd'hui pour explorer de quelle manière nous pouvons vous soutenir dans l'externalisation de vos services comptables avec efficacité et sérénité.
-          </p>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact section-y">
+<section class="contact bg-grey2 section-y">
   <div class="container to-100-per-768">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="menu_content">
-          <h2 class="menu_content-title text-left mb-2">Nos coordonnées.</h2>
-          <hr>
-        </div>
-        <div class="contact_info mt-5 pt-5">
-          <span class="contact_info-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
-          <div class="contact_info-content">
-            <h3 class="contact_info-content--title">Adresse</h3>
-            <p class="contact_info-content--p">
-              {{site.data.company.address}}
-            </p>
-          </div>
-        </div>
-        <div class="contact_info mt-3">
-          <span class="contact_info-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
-          <div class="contact_info-content">
-            <h3 class="contact_info-content--title">Contact</h3>
-            <p class="contact_info-content--p"><a href="tel:{{site.data.company.phone}}"
-                class="contact_info-content--link">{{site.data.company.phone}}</a></p>
-            <p class="contact_info-content--p"><a href="mailto:{{site.data.company.email}}"
-                class="contact_info-content--link">{{site.data.company.email}}</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="menu_content">
-          <h2 class="menu_content-title text-left mb-2">Contactez nous !</h2>
-          <hr>
+          <h2 class="menu_header-title text-center mb-0 pb-0">Nous contacter</h2>
+          <p class="menu_header-title2 text-center pt-0 mt-0">Au sujet de</p>
         </div>
         <br><br>
         <div class="contact_content">
@@ -80,39 +48,44 @@ keywords:
             <input type="hidden" name="firstName" value="" />
             <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <input type="text" class="black_form-input" id="name" name="name" placeholder="Nom/ Prénom *"
+                  <input type="text" class="black_form-input" id="motif" name="motif" placeholder="MOTIF *"
                     required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="black_form-input" id="societe" name="societe" placeholder="Société *"
+                  <input type="text" class="black_form-input" id="lastname" name="lastname" placeholder="NOM *"
                     required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="number" class="black_form-input" id="phone" name="phone" placeholder="Téléphone">
+                  <input type="text" class="black_form-input" id="name" name="name" placeholder="PRENOM *"
+                    required>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <input type="email" class="black_form-input" id="email" name="email" aria-describedby="emailHelp"
-                    placeholder="Email*" required>
+                    placeholder="ADRESSE EMAIL*" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="number" class="black_form-input" id="phone" name="phone" placeholder="TElEPHONE">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="number" class="black_form-input" id="ville" name="ville" placeholder="VILLE">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
-                  <input type="text" class="black_form-input" id="objet" name="objet"
-                    placeholder="Objet*" required>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <textarea type="text" class="black_form-input h-100" id="message" name="message"
-                    placeholder="Message" rows="3" required></textarea>
+                  <textarea type="text" class="black_form-input h-100" id="message" name="message" placeholder="Message"
+                    rows="3" required></textarea>
                 </div>
               </div>
             </div>
@@ -134,8 +107,7 @@ keywords:
               <i class="fa fa-info-square" aria-hidden="true"></i>
             </div>
             <div class="d-flex justify-content-center">
-              <button type="submit" class="button form-submit black_form-button"
-                value="Submit">Envoyer</button>
+              <button type="submit" class="button form-submit black_form-button" value="Submit">VALIDER</button>
             </div>
           </form>
         </div>

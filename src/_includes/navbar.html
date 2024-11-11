@@ -1,8 +1,13 @@
 <section class="Navbar navbar-main fixedNav">
   <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
     <div class="container to-col">
-      <div class="Navbar_image">
+      <div class="Navbar_image hide-on-active">
         <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/white-logo.png"
+          class="Navbar_image-img" alt="Logo" /></a>
+      </div>
+
+      <div class="Navbar_image show-on-active">
+        <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/logo-black.jpg"
           class="Navbar_image-img" alt="Logo" /></a>
       </div>
       <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"

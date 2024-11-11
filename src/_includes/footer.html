@@ -43,31 +43,62 @@
     </div>
   </div>
   <div class="section">
-    <div class="row">
+    <div class="row align-items-end">
       <div class="col-md-3">
         <div class="footer_image">
-          <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
-              class="Navbar_image-img" alt="Logo" /></a>
-        </div>
+          <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/footer-logo.png"
+              class="footer_image-logo" alt="Logo" /></a>
+              </div>
+              <div class="footer_content2">
+                <h3 class="footer_content-title2">COMPAGNIES</h3>
+                <br>
+                <ul class="footer_content-ul">
+                  <li class="footer_content-ul--li">
+                    <a href="" class="footer_content-ul--link">Accueil</a>
+                  </li>
+                  <li class="footer_content-ul--li">
+                    <a href="" class="footer_content-ul--link">Nos Prestations</a>
+                  </li>
+                  <li class="footer_content-ul--li">
+                    <a href="" class="footer_content-ul--link">Nos Réalisations</a>
+                  </li>
+                  <li class="footer_content-ul--li">
+                    <a href="{% link blog.html %}" class="footer_content-ul--link">Blog</a>
+                  </li>
+                  <li class="footer_content-ul--li">
+                    <a href="" class="footer_content-ul--link">Nous Contacter</a>
+                  </li>
+                </ul>
+              </div>
       </div>
       <div class="col-md-6">
         <div class="footer_content">
-          <h3 class="footer_content-title2">COMPAGNIES</h3>
+          <h3 class="footer_content-title2">Les conseils</h3>
+          <br>
           <ul class="footer_content-ul">
             <li class="footer_content-ul--li">
-              <a href="" class="footer_content-ul--link">Accueil</a>
+              <a href="{% link article-agrandir-sa-maison.html %}" class="footer_content-ul--link">Agrandir sa maison : conseils pratiques pour un projet réussi</a>
             </li>
             <li class="footer_content-ul--li">
-              <a href="" class="footer_content-ul--link">Nos Prestations</a>
+              <a href="{% link comment-realiser.html %}" class="footer_content-ul--link">Comment réaliser l'ouverture d'un mur porteur dans votre maison</a>
             </li>
             <li class="footer_content-ul--li">
-              <a href="" class="footer_content-ul--link">Nos Réalisations</a>
+              <a href="{% link entreprise-de-construction.html %}" class="footer_content-ul--link">Entreprise de construction : comment choisir le bon partenaire pour vos travaux</a>
             </li>
             <li class="footer_content-ul--li">
-              <a href="" class="footer_content-ul--link">Blog</a>
+              <a href="{% link entreprise-de-gros.html %}" class="footer_content-ul--link">Entreprise de gros œuvre : un pilier essentiel dans la construction</a>
             </li>
             <li class="footer_content-ul--li">
-              <a href="" class="footer_content-ul--link">Nous Contacter</a>
+              <a href="{% link entreprise-d-extension-de-maison.html %}" class="footer_content-ul--link">Entreprise d’extension de maison : tout ce qu'il faut savoir pour réussir votre projet</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="{% link la-reprise-en-sous-ceuvre.html %}" class="footer_content-ul--link">La reprise en sous-œuvre : Tout ce que vous devez savoir</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="{% link renovation-d-appartement-a-paris.html %}" class="footer_content-ul--link">Rénovation d'appartement à Paris : guide pratique et conseils</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="{% link reprise-des-structures.html %}" class="footer_content-ul--link">Reprise des structures : un guide pratique</a>
             </li>
           </ul>
         </div>
@@ -75,6 +106,7 @@
       <div class="col-md-3">
         <div class="footer_content">
           <h3 class="footer_content-title2">Nous contacter</h3>
+          <br>
           <a href="tel:{{site.data.company.phone}}" class="footer_content-link">{{site.data.company.phone}}</a>
           <p class="footer_content-p">Retrouvez-nous sur</p>
           <ul class="footer_social">
