@@ -46,25 +46,29 @@ function fixNav() {
     responsiveClass: true,
     responsive: {
       100: {
-        items: 2,
+        items: 1,
         nav: true,
+        loop: true,
       },
       400: {
-        items: 2,
+        items: 1,
         nav: true,
+        loop: true,
       },
       768: {
-        items: 3,
+        items: 2,
         nav: true,
+        loop: true,
       },
       1200: {
-        items: 4,
+        items: 3,
         nav: false,
+        loop: true,
       },
       1600: {
         items: 4,
         nav: true,
-        loop: false,
+        loop: true,
       },
     },
   });
@@ -97,14 +101,18 @@ $(document).ready(function () {
   owl.owlCarousel({
     items: 3,
     nav: true,
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     margin: 20,
     autoplayTimeout: 5000,
     autoplayHoverPause: false,
-    dots: true,
+    dots: false,
     animateIn: "fadeIn",
     animateOut: "fadeOut",
+    navText: [
+      "<i class='fas fa-chevron-left owlNav-left2'></i>",
+      "<i class='fas fa-chevron-right owlNav-right2'></i>",
+    ],
     stagePadding: 50,
     center: true,
     responsiveClass: true,
@@ -126,7 +134,7 @@ $(document).ready(function () {
       },
       1200: {
         items: 3,
-        nav: false,
+        nav: true,
         stagePadding: 40,
       },
       1600: {

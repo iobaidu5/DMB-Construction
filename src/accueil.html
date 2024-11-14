@@ -32,7 +32,7 @@ keywords:
               pour comprendre leurs besoins et atteindre leurs objectifs.
             </p>
             <div class="mt-5">
-              <a href="#" class="menu_content-link">VOIR PLUS</a>
+              <a href="{% link contact.html %}" class="menu_content-link">NOUS CONTACTER</a>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ keywords:
               à la réalisation.
             </p>
             <div class="mt-5 pt-3">
-              <a href="#" class="menu_content-link2">Nous contacter</a>
+              <a href="{% link contact.html %}" class="menu_content-link2">Nous contacter</a>
             </div>
           </div>
         </div>
@@ -98,9 +98,6 @@ keywords:
       <div class="col-md-12">
         <div class="menu_image">
           <div class="menu_image-black">
-            <div class="mt-5 pt-3">
-              <a href="#" class="menu_content-link3">VOIR PLUS</a>
-            </div>
           </div>
           <img src="./assets/img/value.png" alt="" class="menu_image-img4">
         </div>
@@ -126,7 +123,7 @@ keywords:
             <div class="col-md-12">
               <div class="menu_faq">
                 <h3 class="menu_faq-title" onclick="toggleFaq(this)">
-                  Respectnormes strictes
+                  Respect normes strictes
                   <span class="faq-icon">+</span>
                 </h3>
                 <p class="menu_faq-p" style="display: none;">
@@ -166,7 +163,7 @@ keywords:
 
 <section class="mene section-y pt-5">
   <div class="menu_header2 container justify-content-start">
-    <h2 class="menu_header-title linear-after text-left">&nbsp;</h2>
+    <h2 class="menu_header-title linear-after-services text-left">&nbsp;</h2>
     <h2 class="menu_header-title2 text-white text-left">&nbsp;<span class="text text-left">NOS<br></span>&nbsp;SERVICES</h2>
   </div>
   <div class="bg-black p-y-5">
@@ -174,27 +171,52 @@ keywords:
       <div class="row align-items-center">
         <div class="col-md-12">
           <div class="owl-carousel owl d-flex align-items-center">
-            <div class="menu_image">
-              <img src="./assets/img/owl1.jpeg" alt="" class="menu_image-owl">
-              <p class="menu_image-owl--p">GENIE CIVIL ET INFRASTRUCTURES</p>
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/owl1.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">GENIE CIVIL ET INFRASTRUCTURES</p>
+              </div>
             </div>
-            <div class="menu_image">
-              <img src="./assets/img/owl2.jpeg" alt="" class="menu_image-owl">
-              <p class="menu_image-owl--p">CONSTRUCTION NEUVE</p>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/owl2.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">CONSTRUCTION NEUVE</p>
+              </div>
             </div>
-            <div class="menu_image">
-              <img src="./assets/img/owl3.jpeg" alt="" class="menu_image-owl">
-              <p class="menu_image-owl--p">RENOVATION ET REHABILITATION</p>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/owl3.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">RENOVATION ET REHABILITATION</p>
+              </div>
             </div>
-            <div class="menu_image">
-              <img src="./assets/img/owl4.jpeg" alt="" class="menu_image-owl">
-              <p class="menu_image-owl--p">EXTENSION / SURELEVATION</p>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/owl4.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">EXTENSION / SURELEVATION</p>
+              </div>
             </div>
-            <div class="menu_image">
-              <img src="./assets/img/owl5.jpeg" alt="" class="menu_image-owl">
-              <p class="menu_image-owl--p">GENIE CIVIL ET INFRASTRUCTURES</p>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/owl5.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">GENIE CIVIL ET INFRASTRUCTURES</p>
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -227,7 +249,7 @@ keywords:
             <p class="projects_content-p">Etiam sodales ac felis id interdum</p>
           </div>
           <div class="mt-5">
-            <a href="#" class="menu_content-link">VOIR NOS REALISATION</a>
+            <a href="{% link nos-prestations.html %}" class="menu_content-link">VOIR NOS PRESTATIONS</a>
           </div>
         </div>
         <div class="col-md-7">
