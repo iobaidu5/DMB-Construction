@@ -46,12 +46,12 @@ function fixNav() {
     responsiveClass: true,
     responsive: {
       100: {
-        items: 2,
+        items: 1,
         nav: true,
         loop: true,
       },
       400: {
-        items: 2,
+        items: 1,
         nav: true,
         loop: true,
       },
