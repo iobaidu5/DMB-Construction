@@ -1,0 +1,735 @@
+<!doctype html>
+<html>
+  <head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <title></title>
+<meta property="og:title" content="" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/",
+"description":"",
+"name":""
+}
+</script>
+
+</head>
+  <body>
+    <section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+    <div class="container to-col">
+      <div class="Navbar_image hide-on-active">
+        <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.svg"
+          class="Navbar_image-img" alt="Logo" /></a>
+      </div>
+
+      <div class="Navbar_image show-on-active">
+        <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo-black.jpg"
+          class="Navbar_image-img" alt="Logo" /></a>
+      </div>
+      <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+    </button>
+      <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+        <ul class="navbar-nav Navbar_nav w-100">
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" title="Accueil" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" title="Nos realisations" href="./nos-realisations.html"> Nos réalisations</a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" title="Nos Prestations" href="./nos-prestations.html"> Nos prestations </a>
+          </li>
+          <li class="nav-item Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" title="Nous contacter" href="./contact.html"> Nous contacter </a>
+          </li>
+          <!-- <li class="nav-item Navbar_nav-item to-show-990">
+            <a href="/devis" class="top-btn">Devis en ligne</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+    
+        <!-- <section class="slider">
+  <div class="container">
+    <div class="slider_content">
+      <h1 class="slider_content-title">
+        Construisons ensemble votre vision
+      </h1>
+      <p class="slider_content-p">Pro tout simplement - Depuis 2015</p>
+      <div class="slider_content-button">
+        <a href="./contact.html" class="slider_content-button--a">
+          Nous Contacter
+        </a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="slider-section">
+  <video class="background-video" autoplay loop muted playsinline>
+    <source src="./assets/img/slider-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+
+
+
+
+
+
+
+<section class="slider video-slider">
+  <!-- <div class="container-fluid">
+      <div class="slider_bg">
+          <div class="row justify-content-center">
+              <div class="col-lg-12 m-0 p-0">
+                  <div class="slider_content">
+                      <div class="slider_content-inner">
+                          <h1 class="slider_content-title">Spécialiste de la pompe à chaleur en Essonne</h1>
+                          <p class="slider_content-p">Votre devis gratuit en 2 min</p>
+                          <a href="/devis" class="slider_content-link">Demandez votre devis</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> -->
+  <!-- <div class="video-background" style="width: 100vw; height: 100vh;">
+      <div class="video-foreground" style="width: 100vw; height: 100vh;">
+        <iframe src="https://www.youtube.com/embed/rWydEGpEGCU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen style="width: 100vw; height: 100vh;"></iframe>
+      </div>
+    </div> -->
+</section>
+
+<!-- <div class="header">
+  <div data-video="rWydEGpEGCU" class="header__video js-background-video">
+      <div class="header__background">
+          <div id="yt-player"></div>
+      </div>
+  </div>
+  <div class="header__video-overlay js-video-overlay"
+      style="background-image: url('https://img.youtube.com/vi/rWydEGpEGCU/maxresdefault.jpg');"></div>
+  <div class="slider_content">
+      <div class="container">
+          <div class="slider_content-inner">
+              <h1 class="slider_content-title">Spécialiste de la pompe à chaleur en Essonne</h1>
+              <p class="slider_content-p">Votre devis gratuit en 2 min</p>
+              <a href="/devis" class="slider_content-link">Demandez votre devis</a>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+
+<section class="slider2">
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="slider_content">
+            <h1 class="slider_content-title">
+              Construisons ensemble votre vision
+            </h1>
+            <p class="slider_content-p">Pro tout simplement - Depuis 2015</p>
+            <div class="slider_content-button">
+              <a href="./contact.html" class="slider_content-button--a">
+                Nous Contacter
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</section>
+    
+
+    <div class="">
+        <section class="menu section">
+  <div class="container-fluid">
+    <div class="row align-items-end">
+      <div class="col-lg-6">
+        <div class="menu_image">
+          <img src="./assets/img/background.png" alt="" class="menu_image-bg">
+          <img src="./assets/img/menu-1.jpeg" alt="" class="menu_image-img round">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="menu_header">
+          <div class="spacer"></div>
+          <h2 class="menu_header-title slide-up">Nous sommes&nbsp;</h2>
+          <div class="spacer"></div>
+          <span class="black-after"></span>
+          <div class="spacer"></div>
+          <h2 class="menu_header-title2 slide-down">&nbsp;&nbsp;dmb construction</h2>
+          <div class="spacer"></div>
+        </div>
+        <div class="menu_content">
+          <h3 class="menu_content-title">Une entreprise de construction</h3>
+          <div class="blur">
+            <p class="menu_content-p">
+              Fondée le 3 octobre 2015, DMB est une entreprise de construction dirigée par M. Dilan Mutlu, qui vise
+              l'excellence et la satisfaction client.
+              <br><br>
+              “Nous accordons une grande importance aux relations avec nos clients, en maintenant une
+              communication claire et transparente. Notre approche consiste à travailler étroitement avec nos clients
+              pour comprendre leurs besoins et atteindre leurs objectifs.
+            </p>
+            <div class="mt-5">
+              <a href="./contact.html" class="menu_content-link">NOUS CONTACTER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="bbhr">
+</section>
+
+<section class="mene pt-0">
+  <div class="menu_header2">
+    <h2 class="menu_header-title linear-after slide-up">Construisons&nbsp;</h2>
+    <h2 class="menu_header-title2 text-white slide-down">&nbsp;&nbsp;ensemble l’avenir</h2>
+  </div>
+  <div class="section bg-black pb-5">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="menu_content w-65">
+            <p class="menu_content-p text-white">
+              Faites confiance à DMB Construction pour
+              mener à bien votre projet, de la conception
+              à la réalisation.
+            </p>
+            <div class="mt-5 pt-3">
+              <a href="./nos-prestations.html" class="menu_content-link2">VOIR NOS PRESTATIONS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="menu_image">
+            <img src="./assets/img/1.png" alt="" class="menu_image-img2">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 my-2">
+          <div class="menu_image">
+            <img src="./assets/img/img1.JPG" alt="" class="menu_image-img3">
+          </div>
+        </div>
+        <div class="col-md-4 my-2">
+          <div class="menu_image">
+            <img src="./assets/img/img2.jpeg" alt="" class="menu_image-img3">
+          </div>
+        </div>
+        <div class="col-md-4 my-2">
+          <div class="menu_image">
+            <img src="./assets/img/img3.JPG" alt="" class="menu_image-img3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="value section pt-5">
+  <div class="menu_header pb-0">
+    <h2 class="menu_header-title2 linear-before slide-down">&nbsp;&nbsp;NOS VALEURS</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="menu_image">
+          <div class="menu_image-black">
+          </div>
+          <img src="./assets/img/value.png" alt="" class="menu_image-img444">
+        </div>
+        <div class="menu_image-faq">
+          <div class="row align-items-center faq-item">
+            <div class="col-md-12">
+              <div class="menu_faq">
+                <h3 class="menu_faq-title" onclick="toggleFaq(this)">
+                  Qualité et professionnalisme
+                  <span class="faq-icon">+</span>
+                </h3>
+                <p class="menu_faq-p" style="display: none;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente ea quisquam harum.
+                  Corrupti quod laborum repudiandae animi veritatis, fugit rem sapiente? Officiis minus harum ex porro
+                  velit cupiditate ad!
+                  Debitis aspernatur cumque ullam, dicta corporis ad, eius perferendis aut excepturi cum quibusdam
+                  nobis, esse quae! Minima, vero vel nostrum mollitia expedita tenetur repellat repellendus nesciunt
+                  labore dolorem quas animi.
+                </p>
+                <hr>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="menu_faq">
+                <h3 class="menu_faq-title" onclick="toggleFaq(this)">
+                  Respect normes strictes
+                  <span class="faq-icon">+</span>
+                </h3>
+                <p class="menu_faq-p" style="display: none;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente ea quisquam harum.
+                  Corrupti quod laborum repudiandae animi veritatis, fugit rem sapiente? Officiis minus harum ex porro
+                  velit cupiditate ad!
+                  Debitis aspernatur cumque ullam, dicta corporis ad, eius perferendis aut excepturi cum quibusdam
+                  nobis, esse quae! Minima, vero vel nostrum mollitia expedita tenetur repellat repellendus nesciunt
+                  labore dolorem quas animi.
+                </p>
+                <hr>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="menu_faq">
+                <h3 class="menu_faq-title" onclick="toggleFaq(this)">
+                  Précisions et devouement
+                  <span class="faq-icon">+</span>
+                </h3>
+                <p class="menu_faq-p" style="display: none;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente ea quisquam harum.
+                  Corrupti quod laborum repudiandae animi veritatis, fugit rem sapiente? Officiis minus harum ex porro
+                  velit cupiditate ad!
+                  Debitis aspernatur cumque ullam, dicta corporis ad, eius perferendis aut excepturi cum quibusdam
+                  nobis, esse quae! Minima, vero vel nostrum mollitia expedita tenetur repellat repellendus nesciunt
+                  labore dolorem quas animi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="mene section-y pt-5 pb-0">
+  <div class="menu_header2 container justify-content-start">
+    <h2 class="menu_header-title linear-after-services text-left">&nbsp;</h2>
+    <h2 class="menu_header-title2 text-white text-left">&nbsp;<span class="text text-left slide-down">NOS<br></span>&nbsp;<span class="slide-down">SERVICES</span></h2>
+  </div>
+  <div class="bg-black p-y-5 pb-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="owl-carousel owl d-flex align-items-center">
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/construction.JPG" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">CONSTRUCTION NEUVE</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/removation.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">RENOVATION ET REHABILITATION</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/IMG_3638.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">EXTENSION / SURELEVATION</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/genie.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">GENIE CIVIL ET INFRASTRUCTURES</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/construction.JPG" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">CONSTRUCTION NEUVE</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/removation.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">RENOVATION ET REHABILITATION</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/IMG_3638.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">EXTENSION / SURELEVATION</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="image-container">
+                <img src="./assets/img/genie.jpeg" alt="" class="menu_image-owl">
+              </div>
+              <div class="text-container">
+                <p class="menu_image-owl--p">GENIE CIVIL ET INFRASTRUCTURES</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="slider_content-button w-auto">
+          <a href="./nos-prestations.html" class="slider_content-button--a">
+            TOUTES NOS PRESTATIONS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects bg-off pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="menu_header2 container justify-content-start">
+          <h2 class="menu_header-title linear-after2 text-left slide-up">&nbsp;Projets</h2>
+          <h2 class="menu_header-title2 text-white text-left slide-down">&nbsp;&nbsp;récents</h2>
+        </div>
+        <div class="menu_image">
+          <img src="./assets/img/projects.jpeg" alt="" class="menu_image-img5">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section pt-5 pb-0">
+    <div class="projects_card">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <div class="projects_content">
+            <h3 class="projects_content-title">Construction d’une piscine municipale</h3>
+            <p class="projects_content-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="projects_content-p">Etiam sodales ac felis id interdum</p>
+            <p class="projects_content-p">Etiam sodales ac felis id interdum</p>
+            <p class="projects_content-p">Etiam sodales ac felis id interdum</p>
+          </div>
+          <div class="mt-5">
+            <a href="./nos-realisations.html" class="menu_content-link">VOIR NOS REALISATIONS</a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="row mt-5">
+            <div class="col-md-6 my-3">
+              <div class="projects_image">
+                <img src="./assets/img/project1.jpeg" alt="" class="projects_image-img">
+              </div>
+            </div>
+            <div class="col-md-6 my-3">
+              <div class="projects_image">
+                <img src="./assets/img/project2.jpeg" alt="" class="projects_image-img">
+              </div>
+            </div>
+            <div class="col-md-6 my-3">
+              <div class="projects_image">
+                <img src="./assets/img/project3.jpeg" alt="" class="projects_image-img">
+              </div>
+            </div>
+            <div class="col-md-6 my-3">
+              <div class="projects_image">
+                <img src="./assets/img/project4.jpeg" alt="" class="projects_image-img2">
+              </div>
+              <div class="projects_image">
+                <img src="./assets/img/project5.png" alt="" class="projects_image-img3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="menu section bg-white">
+  <div class="container">
+    <div class="row mx-0 px-0">
+      <div class="col-md-6">
+        <div class="menu_image">
+          <div class="menu_image-img6"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_header3">
+          <h2 class="menu_header-title slide-up"><span class="black-after2">La sécurité</span></h2>
+          <h2 class="menu_header-title slide-down">
+            notre priorité absolue</h2>
+        </div>
+        <div class="menu_content">
+          <div class="blur">
+            <p class="menu_content-p">
+              La sécurité est notre priorité absolue chez DMB.
+              Nous respectons strictement les normes pour
+              assurer un environnement de travail protégé.
+              Protocoles rigoureux et collaboration étroite pour
+              prévenir les risques. Chez nous, chaque
+              personne compte, nous veillons à ce que tous
+              rentrent chez eux en sécurité.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="bbhr2 mb-5">
+</section>
+<section class="engagement bg-off">
+  <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-12 pt-5">
+          <div class="menu_header pb-3 mb-4">
+            <h2 class="menu_header-title slide-up">NOS ENGAGEMENTS</h2>
+          </div>
+        </div>
+          <div class="engagement_icons section pt-0 w-100 d-flex justify-content-center pb-5">
+            <div class="row justify-content-between w-100 mx-auto">
+              <div class="col-lg-3 col-md-6 g-2 d-flex flex-column justify-content-center align-items-center w-100">
+                <img class="engagement_icons-img" src="./assets/img/newicon1.webp" />
+                <p class="engagement_icons-p">Satisfaction clients</p>
+              </div>
+              <div class="col-lg-4 col-md-6 g-2 d-flex flex-column justify-content-center align-items-center w-100">
+                <img class="engagement_icons-img" src="./assets/img/newicon2.webp" />
+                <p class="engagement_icons-p">Communication claire
+                  et transparence</p>
+              </div>
+              <div class="col-lg-2 col-md-6 g-2 d-flex flex-column justify-content-center align-items-center w-100">
+                <img class="engagement_icons-img" src="./assets/img/newicon3.webp" />
+                <p class="engagement_icons-p mt-2">L’excellence continue</p>
+              </div>
+              <div class="col-lg-3 col-md-6 g-2 d-flex flex-column justify-content-center align-items-center w-100">
+                <img class="engagement_icons-img" src="./assets/img/newicon4.webp" />
+                <p class="engagement_icons-p">Innovation</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  function toggleFaq(element) {
+    const $p = $(element).next("p");
+    const $icon = $(element).find(".faq-icon");
+
+    if ($p.is(":hidden")) {
+      $p.slideDown(300);
+      $icon.text("-");
+    } else {
+      $p.slideUp(300);
+      $icon.text("+");
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="fixphone">
+      <a href="tel:06 64 94 13 00" title="06 64 94 13 00" class="one phoneone">
+       <span class="text-white"><i class="fas fa-phone-alt"></i> &nbsp;06 64 94 13 00</span> 
+      </a>
+    </div>
+
+    <footer class="footer">
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <div class="mapouter">
+        <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=4%20RUE%20DES%20FERMES%2091700%20SAINTE-GENEVIEVE-DES-BOIS+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+              href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="footer_content">
+        <h2 class="footer_content-title">Trouvez votre agence</h2>
+        <a href="tel:06 64 94 13 00" class="footer_content-phone color-red">06 64 94 13 00</a>
+      </div>
+      <div class="mt-5 footer_content">
+        <h3 class="footer_content-header">Agence </h3>
+        <p class="footer_content-p">4 RUE DES FERMES 91700 SAINTE-GENEVIEVE-DES-BOIS</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="footer_image">
+          <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.svg"
+              class="footer_image-logo" alt="Logo" /></a>
+        </div>
+        <div class="footer_content2">
+          <ul class="footer_content-ul">
+            <li class="footer_content-ul--li">
+              <a href="./index.html" class="footer_content-ul--link">Accueil</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./nos-prestations.html" class="footer_content-ul--link">Nos Prestations</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./nos-realisations.html" class="footer_content-ul--link">Nos Réalisations</a>
+            </li>
+            <!-- <li class="footer_content-ul--li">
+                    <a href="./blog.html" class="footer_content-ul--link">Blog</a>
+                  </li> -->
+            <li class="footer_content-ul--li">
+              <a href="./contact.html" class="footer_content-ul--link">Nous Contacter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="footer_content2">
+          <h3 class="footer_content-title2">Les conseils</h3>
+          <br>
+          <ul class="footer_content-ul">
+            <li class="footer_content-ul--li">
+              <a href="./article-agrandir-sa-maison.html" class="footer_content-ul--link">Agrandir sa maison :
+                conseils pratiques pour un projet réussi</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./comment-realiser.html" class="footer_content-ul--link">Comment réaliser l'ouverture
+                d'un mur porteur dans votre maison</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./entreprise-de-construction.html" class="footer_content-ul--link">Entreprise de
+                construction : comment choisir le bon partenaire pour vos travaux</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./entreprise-de-gros.html" class="footer_content-ul--link">Entreprise de gros œuvre : un
+                pilier essentiel dans la construction</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./entreprise-d-extension-de-maison.html" class="footer_content-ul--link">Entreprise
+                d’extension de maison : tout ce qu'il faut savoir pour réussir votre projet</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./la-reprise-en-sous-ceuvre.html" class="footer_content-ul--link">La reprise en
+                sous-œuvre : Tout ce que vous devez savoir</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./renovation-d-appartement-a-paris.html" class="footer_content-ul--link">Rénovation
+                d'appartement à Paris : guide pratique et conseils</a>
+            </li>
+            <li class="footer_content-ul--li">
+              <a href="./reprise-des-structures.html" class="footer_content-ul--link">Reprise des structures :
+                un guide pratique</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer_content2 pt-3">
+          <h3 class="footer_content-title2">Nous contacter</h3>
+          <br>
+          <a href="tel:06 64 94 13 00"
+            class="footer_content-link color-red">06 64 94 13 00</a>
+          <p class="footer_content-p">Retrouvez-nous sur</p>
+          <ul class="footer_social">
+            <li class="footer_social-icon"> <a href="https://www.instagram.com/dmb_construction_/profilecard/?igsh=MXNubWNzd2lkamhxag%3D%3D" target="_blank" class="icon-link"> <i class="fab fa-instagram"></i></a></li>
+            <li class="footer_social-icon"> <a href="https://www.linkedin.com/in/dilan-mutlu-a59ab8258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="icon-link"> <i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer_bottom text-center">
+  <a href="" class="footer_bottom-p">BHInternet - Création site internet | 2024</a>
+</div>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <a href="#" id="fixphone" title="Up"><i class="fa fa-chevron-up"></i></a>
+  </body>
+</html>
