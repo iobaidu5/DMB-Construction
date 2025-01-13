@@ -135,7 +135,7 @@ $(document).ready(function () {
       1200: {
         items: 3,
         nav: true,
-        stagePadding: 40,
+        stagePadding: 0,
       },
       1600: {
         items: 3,
