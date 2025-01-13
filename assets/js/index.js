@@ -114,7 +114,7 @@ $(document).ready(function () {
       "<i class='fas fa-chevron-right owlNav-right2'></i>",
     ],
     stagePadding: 50,
-    center: true,
+    center: false,
     responsiveClass: true,
     responsive: {
       100: {
@@ -404,3 +404,21 @@ $('.counter-count').each(function () {
     }
   });
 });
+
+function toggleFaq(element) {
+  // Collapse all open FAQ items except the clicked one
+  $(".menu_faq-p").not($(element).next("p")).slideUp(300);
+  $(".faq-icon").not($(element).find(".faq-icon")).text("+");
+
+  // Toggle the clicked FAQ item
+  const $p = $(element).next("p");
+  const $icon = $(element).find(".faq-icon");
+
+  if ($p.is(":hidden")) {
+    $p.slideDown(300);
+    $icon.text("-");
+  } else {
+    $p.slideUp(300);
+    $icon.text("+");
+  }
+}
