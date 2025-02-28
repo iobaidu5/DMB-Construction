@@ -228,11 +228,12 @@ header .top a {
     height: 8rem; */
     max-height: auto;
     /* object-fit: cover; */
-    margin-top: -1.5rem
+    /* margin-top: -1.5rem; */
+    width: 130px;
 }
 
 .navbar-active .Navbar_image-img {
-    width: 168px;
+    width: 130px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -2720,10 +2721,7 @@ select {
 }
 
 .footer_image-logo {
-    width: 20.2rem;
-    height: 13.8rem;
-    max-width: 100%;
-    object-fit: cover
+    width: 130px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -17517,3 +17515,7 @@ a.text-dark:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.logo {
+    width: 130px;
+}
