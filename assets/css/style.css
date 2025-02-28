@@ -17519,3 +17519,10 @@ a.text-dark:focus {
 .logo {
     width: 130px;
 }
+
+.img-container {
+    background-image: url("../img/menu-1.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat
+}
