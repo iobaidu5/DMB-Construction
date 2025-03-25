@@ -17526,3 +17526,8 @@ a.text-dark:focus {
     background-position: bottom;
     background-repeat: no-repeat
 }
+
+.custom-line {
+    width: 100% !important;
+    margin-right: 0 !important;
+}
