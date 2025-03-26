@@ -171,11 +171,121 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function () {
+  var owl = $(".owl3");
+  owl.owlCarousel({
+    items: 3,
+    nav: true,
+    loop: false,
+    autoplay: false,
+    margin: 20,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    dots: false,
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
+    navText: [
+      "<i class='fas fa-chevron-left owlNav-left2'></i>",
+      "<i class='fas fa-chevron-right owlNav-right2'></i>",
+    ],
+    stagePadding: 50,
+    center: true,
+    responsiveClass: true,
+    responsive: {
+      100: {
+        items: 1,
+        nav: true,
+        stagePadding: 0,
+      },
+      400: {
+        items: 2,
+        nav: true,
+        stagePadding: 0,
+      },
+      768: {
+        items: 2,
+        nav: true,
+        stagePadding: 0,
+      },
+      1200: {
+        items: 3,
+        nav: true,
+        stagePadding: 40,
+      },
+      1600: {
+        items: 3,
+        nav: true,
+        loop: false,
+        stagePadding: 50,
+      },
+    },
+  });
+
+  function limitDots() {
+    var dots = $('.owl-dot');
+    if (dots.length > 2) {
+      dots.slice(2).hide(); // Hide all dots after the third one
+    }
+  }
+
+  // Call the function to limit dots
+  limitDots();
+
+  // Reapply the limitDots function after each change (like when navigating)
+  owl.on('changed.owl.carousel', function (event) {
+    limitDots();
+  });
+  
+  $(".play").on("click", function () {
+    owl.trigger("play.owl.autoplay", [5000]);
+  });
+  $(".stop").on("click", function () {
+    owl.trigger("stop.owl.autoplay");
+  });
+});
+
+
 
 $(document).on("click", '[data-toggle="lightbox"]', function (event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slideUpElements = document.querySelectorAll(".slide-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  });
+
+  slideUpElements.forEach((element) => observer.observe(element));
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slideDownElements = document.querySelectorAll(".slide-down");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  });
+
+  slideDownElements.forEach((element) => observer.observe(element));
+});
+
+
 
 
 $(document).ready(function () {
@@ -208,7 +318,6 @@ $(document).ready(function () {
     }
   });
 });
-
 
 
 $(document).ready(function () {
