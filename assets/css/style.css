@@ -17537,4 +17537,8 @@ a.text-dark:focus {
     .black-after::after {
         display: none
     }
+
+    .text-bg2 {
+        margin-left: 0;
+    }
 }
